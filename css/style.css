@@ -5,14 +5,14 @@
 }
 
 .my-container{
-    margin: 40px auto;
+    margin: 20px auto;
     width: 90vw;
     height: 90vh;
 }
 
 .debug{
     border: 1px solid black;
-    min-height: 45vh;
+    height: 350px;
 }
 
 .circle{
@@ -60,4 +60,12 @@
 
 .color-rhythm{
     color: var(--rhythm);
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+border: 0;
 }
