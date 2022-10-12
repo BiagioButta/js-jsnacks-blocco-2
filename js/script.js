@@ -43,6 +43,12 @@ for(let i = 0 ; i < 6; i++ ){
 }
 
 snack2.addEventListener('click', function(){
+    nC1.innerHTML = "";
+    nC2.innerHTML = "";
+    nC3.innerHTML = "";
+    nC4.innerHTML = "";
+    nC5.innerHTML = "";
+    nC6.innerHTML = "";
 
     nC1.append(nomeCompleto[0])
     nC2.append(nomeCompleto[1])
@@ -80,4 +86,40 @@ somma.addEventListener('click', function(){
         let somma = (k += array[i])
         sommaDispari.innerHTML = `${somma}`
     }
+})
+
+
+// snack 4
+
+const t = [];
+const s = [];
+let snack4 = document.getElementById('snack4');
+let t_array = document.getElementById('t_array');
+let s_array = document.getElementById('s_array');
+let btn = document.getElementById('aggiungi');
+let noAdd = document.getElementById('noAdd');
+let tL = t.length;
+let sL = s.length;
+
+
+for(let i = 0; i < 30; i = i + 2){
+    t[i] = Math.round(Math.random() * 100) + 1
+}
+for(let z = 0; z < 50; z = z + 2){
+    s[z] = Math.round(Math.random() * 100) +1
+}
+
+snack4.addEventListener('click', function(){
+    t_array.innerHTML = ""
+    s_array.innerHTML = ""
+    t_array.append(t)
+    s_array.append(s)
+})
+
+
+
+btn.addEventListener('click', function(){
+    noAdd.innerHTML = "";
+    if(tL < sL){
+       
 })

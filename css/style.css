@@ -11,7 +11,6 @@
 }
 
 .debug{
-    border: 1px solid black;
     height: 350px;
 }
 
@@ -72,5 +71,11 @@ border: 0;
 
 #somma{
     border-color: var(--buff);
+    color: var(--buff);
+}
+
+#numDaSommare{
+    border-color: var(--buff);
+    background-color: var(--vivid-tangerine);
     color: var(--buff);
 }
