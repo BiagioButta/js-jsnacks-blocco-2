@@ -74,9 +74,10 @@ snack3.addEventListener('click', function(){
 })
 
 somma.addEventListener('click', function(){
+    
     let k = 0
-    for(let i= 1; i < array.length; i = i + 2){
-        k += array[i]
-        sommaDispari.innerHTML += `${k}`
+    for(let i= 0; i < array.length; i = i + 2){
+        let somma = (k += array[i])
+        sommaDispari.innerHTML = `${somma}`
     }
 })
