@@ -57,3 +57,26 @@ snack2.addEventListener('click', function(){
 // Snack 3
 
 
+let numDaSommare = document.getElementById('numDaSommare')
+let snack3 = document.getElementById('snack3')
+let somma = document.getElementById('somma')
+let totNum = document.getElementById('totNum')
+let sommaDispari = document.getElementById('sommaDispari')
+
+let  array = []
+
+snack3.addEventListener('click', function(){
+    let nDs = parseFloat(numDaSommare.value)
+    for(let i = 0; i < nDs; i++){
+        array[i] = Math.round(Math.random() * 100) + 1
+        totNum.append(`${array[i]}  `)
+    }
+})
+
+somma.addEventListener('click', function(){
+    let k = 0
+    for(let i= 1; i < array.length; i = i + 2){
+        k += array[i]
+        sommaDispari.innerHTML += `${k}`
+    }
+})
